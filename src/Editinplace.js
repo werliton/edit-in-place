@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 
 
-const EditInPlace = ({value, onChangeValue}) => {    
+const EditInPlace = ({value, onChangeValue, field}) => {    
     const [isEditing, setIsEditing] = useState(false)
     const edit = () => setIsEditing(true)
     const done = () => {
@@ -23,7 +23,7 @@ const EditInPlace = ({value, onChangeValue}) => {
     if(isEditing){
         return <input type="text" onBlur={done} defaultValue={value} ref={inputRef} />
     }
-    return <h1 className="edit-in-place" onClick={edit}>{value}</h1>
+    return <h1 className="edit-in-place" onClick={edit}>Digite aqui um {field}</h1>
 }
 
 export default EditInPlace

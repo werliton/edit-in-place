@@ -34,9 +34,15 @@
 
 .edit-in-place{
   padding: 1px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.0em;
 }
 
 .edit-in-place:hover{
-  background-color: yellow;
-  border: 1px dotted red;
+  background-color: rgb(141, 141, 141);
+  border: 1px dotted rgb(20, 19, 19);
+}
+
+.show-text{
+  color: royalblue;
 }

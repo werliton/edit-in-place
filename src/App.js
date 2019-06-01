@@ -1,16 +1,19 @@
-import React, { useState } from 'react';
-import './App.css';
-import EditInPlace from './Editinplace'
+import React, { useState } from "react";
+import "./App.css";
+import EditInPlace from "./Editinplace";
 
 function App() {
-  const [name, setName] = useState('Letox')
+  const [pais, setPais] = useState("Brasil");
+  const [estado, setEstado] = useState("Maranhão");
   return (
     <div className="App">
-      <EditInPlace value={name} onChangeValue={setName}/>
+      <EditInPlace value={pais} onChangeValue={setPais} field="Pais" />
+      <EditInPlace value={estado} onChangeValue={setEstado} field="Estado" />
       <hr />
-      Nome: {name}
+      <span className="show-text">País: {pais}</span> <br />
+      <span className="show-text">Estado: {estado}</span>
     </div>
-  )
+  );
 }
 
 export default App;
