@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
-import EditInPlace from "./Editinplace";
+import EditInPlace from "./components/Editinplace";
+import Spancustom from "./components/span-custom";
 
 function App() {
   const [pais, setPais] = useState("Brasil");
@@ -10,8 +11,8 @@ function App() {
       <EditInPlace value={pais} onChangeValue={setPais} field="Pais" />
       <EditInPlace value={estado} onChangeValue={setEstado} field="Estado" />
       <hr />
-      <span className="show-text">País: {pais}</span> <br />
-      <span className="show-text">Estado: {estado}</span>
+      <Spancustom>País: {pais}</Spancustom><br/>
+      <Spancustom>Estado: {estado}</Spancustom>
     </div>
   );
 }
