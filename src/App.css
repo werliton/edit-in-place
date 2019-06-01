@@ -31,3 +31,12 @@
     transform: rotate(360deg);
   }
 }
+
+.edit-in-place{
+  padding: 1px;
+}
+
+.edit-in-place:hover{
+  background-color: yellow;
+  border: 1px dotted red;
+}
