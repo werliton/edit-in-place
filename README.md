@@ -15,4 +15,5 @@ Projetinho fazendo uso de alguns Hooks React
 
 ## Referência
 > DevPleno: [Edit-in-place | (Re)criando componentes em React](https://www.youtube.com/watch?v=DSbeyRFqnLk)
-> [React HOOKS (NEW)](https://reactjs.org/docs/hooks-intro.html)
+
+> React: [HOOKS (NEW)](https://reactjs.org/docs/hooks-intro.html)
